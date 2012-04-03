@@ -13,7 +13,7 @@ On the Server:
 
     # Check it out!
     git clone git@github.com:taeram/upside-down-ternet.git
-    cd upside-down-ternet/server/
+    cd ./upside-down-ternet/server/
 
     # Update the squid config with your internal network range. Eg. 192.168.0.1/24
     nano ./etc/squid/squid.conf 
@@ -28,7 +28,7 @@ On an Ubuntu Client:
 
     # Check it out!
     git clone git@github.com:taeram/upside-down-ternet.git
-    cd ./client/
+    cd ./upside-down-ternet/client/
 
     # Update the init script with the IP address of your Server
     nano ./etc/init/upsidedown.conf
