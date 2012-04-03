@@ -1,0 +1,4 @@
+<VirtualHost *:80>
+	DocumentRoot /var/www/squid
+	CustomLog ${APACHE_LOG_DIR}/squid-access.log combined
+</VirtualHost>
