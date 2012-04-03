@@ -3,6 +3,8 @@ Upside-Down-ternet
 
 An Ubuntu-compatible version of Upside-Down-ternet: http://www.ex-parrot.com/~pete/upside-down-ternet.html
 
+This version is intended to be run as a server on a LAN and to have some, but not all clients redirected to it. Perfect for April Fools' day.
+
 Required:
 
 * A server running Ubuntu
