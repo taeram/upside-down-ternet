@@ -15,14 +15,25 @@ On the Server:
     git clone git@github.com:taeram/upside-down-ternet.git
     cd ./upside-down-ternet/server/
 
-    # Update the squid config with your internal network range. Eg. 192.168.0.1/24
-    nano ./etc/squid/squid.conf 
-
     # Update the rewrite script with your server's IP address. Eg. 192.168.0.130
     nano ./var/www/squid/rewrite.pl 
 
     # Install all the things!
     sudo ./install.sh
+
+    # Update the squid config
+    nano /etc/squid/squid.conf
+    
+        # Add this after: http_access allow localhost
+        http_access allow localnet
+    
+        # Modify http_port
+        http_port 3128 transparent
+
+        # Add the url rewrite program
+        url_rewrite_program /var/www/squid/rewrite.pl
+    
+    restart squid
 
 On an Ubuntu Client:
 

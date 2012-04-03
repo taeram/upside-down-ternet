@@ -2,10 +2,10 @@
 IMAGE_PATH=$1
 IMAGE_URL=`echo "$2" | sed -e 's/ .*$//'`
 
-echo "Flipping $IMAGE_URL for $2" >> /opt/image.log
+echo " Flipping $IMAGE_URL for $2" >> /var/log/squid/transform-image.log
 
 /usr/bin/wget -q -O $IMAGE_PATH $IMAGE_URL
-if [ $? = 0 ]; then
+if [ "$?" = "0" ]; then
     # Determine which effect we'll apply
     EFFECT_NUM=$((RANDOM%8+1));
     if [ $EFFECT_NUM = 1 ]; then
