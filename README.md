@@ -56,7 +56,3 @@ On a client running Firefox, Chrome, Internet Explorer, Safari, etc.:
 * Open the Proxy setup in the browser
 * Set the proxy IP address to your server's IP address. Eg. 192.168.0.130
 * Set the proxy port to 3128 (which is squid on your server)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/taeram/upside-down-ternet/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
